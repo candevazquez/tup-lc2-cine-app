@@ -3,13 +3,18 @@
     place-items: center;
     grid-template-columns: repeat(2,1fr);
     width:100%;
-    gap: 100px;  
+    gap: 100px;
+    /*quedan mas juntos*/
+    padding-left: 50px;
+    padding-right: 50px;
  }
+
+ /*no pude alinear las imagenes*/
  .contenedorPeliculasFavoritas img{ /*para el diseño de las imagenes*/
     border-radius: 15px; /*redondeo*/ 
     margin-bottom: 10px; /*margen inferior*/
-    width: 50%; /*acupa 50%*/  
-    height: 350px;
+    width: 300px;   
+    height: 430px;
  }
  .contenedorPeliculasFavoritas{ /*para que los elementos grid los pueda ajustar*/
    display: grid;
@@ -20,7 +25,4 @@
  .contenedorPeliculasFavoritas h3,img{ /*para centrar titulo e img*/
    align-self: center;
    justify-self: center;  
- }
- main h2{
-  text-shadow: 2px 2px 3px rgb(58, 55, 55); /*sombra al texto*/
  }

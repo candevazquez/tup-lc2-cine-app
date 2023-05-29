@@ -3,7 +3,7 @@
    border: 2px;
    text-align:center;
    height: 30px ;
-   width: 80px ;          /*PREGUNTAR TAMAÑO */
+   width: 80px ;          
    background-color: var( --color-active); 
    color: #f7f9f9;
    border-radius:5px ;
@@ -11,9 +11,7 @@
    font-weight:20px;
    transition: .3s ease all; 
  }
- main h2{
-   text-shadow: 2px 2px 3px rgb(58, 55, 55); /*sombra al texto*/
- }
+
 
  #limpiar:hover{
    background-color: var(--color-back-active);

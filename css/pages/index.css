@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-main{
-  font-family:'Montserrat' ,sans-serif; /*2- fuente creo que bien*/
-}
+
+  *{
+    font-family:'Montserrat' ,sans-serif; /*2- la fuente no anda solo en el main*/
+  }
 
   body{
     background-color: #e0e0e0; /*3-fondo gris*/
@@ -25,7 +26,7 @@ main{
   }
   .contenedorPeliculas p{ /*5-tamaño y fuente*/
     font-size: 12px; /*tamaño de los parrafos*/
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*fuente de los parrafos ¡PREGUNTAR!*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*fuente?*/
   }
   .contenedorPeliculas h3
   {
@@ -33,93 +34,90 @@ main{
     font-weight: 600px; /*6-ancho titulos*/
   }
 
-  .success{
+  /*MENSAJES*/
+  .success{ 
     background-color: #28a745 ;
+    border-radius: 20px;
+    color: var(--color-texto-blanco);
   }
   .warning{
     background-color: #ffc107;
+    border-radius: 20px;
+    color: var(--color-texto-blanco);
   }
   .error{
     background-color: #dc3545;
-  }
-  
+    border-radius: 20px;
+    color: var(--color-texto-blanco);
+   }
 
-  /*Los colores de fondo a aplicar son: Success - verde (#28a745). Warning - amarillo
-(#ffc107). Error - rojo (#dc3545)*/
 
+   
 .paginacion {
-    position: static ;
-    bottom: auto;
-    width: 300px;
-    display:flex;
-    justify-content:center; /*centrarlos*/
-    gap: 20px ; /*separados entre ellos*/
-    padding:20px; 
+  position:static ;
+  bottom: auto ;
+  width: 400px; ;
+  display: flex ;
+  justify-content:center ; /*centrados*/
+  gap: 20px; /*separacion*/
+  padding:10px ;
 }
 
 .paginacion button {
-    cursor: pointer; /*forma puntero*/
-    border: 2px;
-    display:flex;
-    align-items: center;
-    justify-content:center;
-    text-align:center;
-    height: 40px ;
-    width: 150px ;          /*PREGUNTAR TAMAÑO */
-    background-color: #7f8c8d; 
-    color: #f7f9f9;
-    border-radius:5px ;
-    font-family: 'Montserrat' ,sans-serif ;
-    font-weight:20px;
-    transition: .3s ease all;
+  cursor: pointer;
+  border: 2px ;
+  display: flex ;
+  align-items:center ;
+  justify-content:center ;
+  text-align:center ;
+  height:50px ;
+  width:300px ;
+  background-color: #220736;  /*no se si habia variable del color*/
+  color: var(--color-texto-blanco);
+  border-radius: 30px ;
+  font-family: 'Montserrat' ,sans-serif ; 
+  font-weight:10px;
+  transition: .3s ease all;
 }
 
 .paginacion button:hover {
-    background-color: var(--color-back-active);
+  background-color: var(--color-back-active);
 }
 
-/*Estilos Generales Botones Favoritos
-¡PREGUNTAR!*/
-.favoritos {
-    background: #7f8c8d;
-    color:var(--color-texto-blanco); /*variable del common*/
-    display:flex;
-    font-size:15px;
-    margin:20px;
-    padding: 10px 0;
-    text-align:center;
-    width: 200px;
-    text-decoration: none;
-    box-shadow: 0px 3px 0px #373c3c;
-    border-radius: 20px; /*para redondear bordes*/
-    justify-content: center; /*para dejar el texto en el medio*/
+/*Estilos Generales Botones Favoritos*/
+
+.favoritos { /*no se si esta bien llamarlo por la clase o si tiene que ser un button*/
+  background: #7f8c8d;
+  color:var(--color-texto-blanco); /*variable del common*/
+  display:flex;
+  font-size:15px;
+  margin:20px;
+  padding: 10px 0;
+  text-align:center;
+  width: 200px;
+  text-decoration: none;
+  box-shadow: 0px 3px 0px #373c3c;
+  border-radius: 20px; /*para redondear bordes*/
+  justify-content: center; /*para dejar el texto en el medio*/
 }
 
-.button span {
-    margin-right: 10px;
+.favoritos span {
+  margin-right: 10px;
 }
 
-.button.medium {
-    width: 150px;
+.favoritos.medium {
+  width: 150px;
 }
 
-.button.radius {
-    border-radius: 50px;
+.favoritos.radius {
+  border-radius: 50px;
 }
 
-.button:hover {
-    box-shadow: 0px 0px 0px;
+.favoritos:hover {
+  box-shadow: 0px 0px 0px;
 }
-main h2{
-  text-shadow: 2px 2px 3px rgb(58, 55, 55); /*sombra al texto*/
-}
+
 main p{
   text-align: center; /*texto de agregar peli*/
 }
-#boton-agregar{
-  background: var(--color-active);
-  color:var(--color-texto-blanco); /*variable del common*/
-  width: 80px;
-  border-radius: 20px; /*para redondear bordes*/
-  cursor: pointer;
-}
+

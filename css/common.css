@@ -176,3 +176,7 @@
   .verde{
     background-color:#28a745 ;
   }
+
+  main h2{
+    text-shadow: 1px 2px 4px rgb(131, 128, 128); /*sombra a todos los titulos h2*/
+  }
